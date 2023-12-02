@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <!--About-->
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        
+    </head>
+    <body>
+        
+        <div id="header">
+                    <div class = "container">
+                    <nav>
+                    <ul>
+                        <li><a href ="index.html">Home</a></li>
+                        <li><a href ="about.html">About</a></li>
+                        <li><a href ="project.html">Project</a></li>
+                        <li><a href ="skill.html">Skill</a></li>
+                        <li><a href ="contact.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                        </div>
+            </div>
+        
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span>Me!</span></h2>>
+            
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                 <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Suject">
+                </div>
+                <textarea name="Message" id="id" cols="30" rows="10" placeholder="Your Message">
+                </textarea>
+                <input type ="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+            </body>
+    
+         <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            
+            // Show an alert when the form is submitted
+            alert('Form submitted successfully!'); // You can replace this with your desired functionality
+        });
+    </script>
+
+
+              
+             <!-- FOOTER -->
+             
+             <section class="footer">
+                 <div class="box-container">
+                     <div class="box">
+                         <h3>Quick Links</h3><!-- comment -->
+                         <a href="#">Home</a>
+                         <a href="#">About</a>
+                         <a href="#">Project</a>
+                         <a href="#">Skill</a>
+                         <a href="#">Contact</a>
+                         
+                         </div>
+                     
+                      
+                     <div class="box">
+                         <h3>Extra Links</h3><!-- comment -->
+                         <a href="#">My Account</a>
+                         <a href="#">My Order</a>
+                         </div>
+                     
+                      
+                     <div class="box">
+                         <h3>Contact Info</h3><!-- comment -->
+                         <a href="#">+123-456-7890</a>
+                         <a href="#">example@gmail.com</a>
+                         <a href="#">Terengganu, Malaysia</a>
+                        <a href="#">Terengganu, Malaysia</a>
+                        
+                         </div>
+                     
+                     <div class = "credit">Create By <span> Mioswan</span> | All Rights Reserved</div>
+                 </div>
+             </section>
+        
+        
+     
+    </body>
+</html>

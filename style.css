@@ -1,0 +1,583 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 23, 2023, 1:20:10 PM
+    Author     : USER
+*/
+/* Reset styles and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif,'vouge';
+}
+/* Global styles */
+body {
+   
+    background-color: pink;
+    color: #333;
+}
+
+#header {
+ 
+    width: 100%;
+    height: 100vh;
+    background-image: url(imageportfolio/mia1.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.container{
+    padding: 10px 10%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+   margin-top: 30%;
+    margin-top: 30px;
+}
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: brown;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.box a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.credit {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.credit span {
+    color: black;
+}
+
+
+/*-----Project-----*/
+
+.body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: 'Arial', vouge;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Project Section Styles */
+.project {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.project .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project .heading span {
+    color: #ff4500; 
+}
+
+.project .box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project .box {
+    width: calc(33.3333% - 40px); /* Adjust the width based on your layout */
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project .image {
+    position: relative;
+}
+
+.project .image h3 {
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    left: 10px;
+    color: white;
+    
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project .box:hover .overlay {
+    opacity: 5;
+   
+}
+
+.project .overlay a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.project .content {
+    background: black;
+    padding: 30px;
+}
+
+.project .content img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Add a border to images */
+    border-radius: 4px; /* Optional: Rounded corners for images */
+}
+
+
+/* --- about me section ----- */
+
+.infoSection {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FCEDDA;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the entire section */
+}
+
+.infoSection h1,
+.infoSection h2,
+.infoSection p {
+ text-align: left; /* Align text to the left within the section */
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.personalInfo div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: white;
+    color: darkturquoise ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button button:hover {
+    background-color: lightpink;
+}
+
+.infoSection h2{
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    padding: 14px 0px 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.infoSection p{
+    color: #333;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+    padding-bottom: 8px;
+}
+.personalInfo{
+    display: flex;
+    grid-template-colums: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+    
+    
+    
+}
+.personalInfo div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.personalInfo div span{
+   color: black;
+    letter-spacing: 1px;
+    
+}
+.infoSection button{
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid red;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top:20px;
+    
+}
+.infoSection button{
+    color: brown;
+    border-color: brown;
+}
+@media(max-width:1068px){
+    .about_cotainer .about_contents{
+        display: grid;
+        grid-template-columns: 2fr 45fr;
+        grid-gap: 70px;
+        grid-template-areas: 'imageSect skillSect'
+            'infoSect skillSect';
+    }
+}
+
+/*skill*/
+.skillSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.skill {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.subject {
+    font-size: 17px;
+    font-weight: thin;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.progress_bar {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress_line {
+    height: 20px;
+    background-color: #F08080; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8);
+    border-radius: 10px;
+    transition: width 0.8s ease-in-out;
+    position: relative;
+}
+
+.progress_line::after {
+    content: attr(value);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.skill.low .progress_line { width: 30%; background-color: #e74c3c; }
+.skill.medium .progress_line { width: 60%; background-color: #f39c12; }
+.skill.high .progress_line { width: 90%; background-color: #2ecc71; }
+
+.skill .subject.Pyhton {
+    font-weight: bold;
+    color: #fff;
+}
+
+ /*ABOUT*/
+#about{
+    margin: 10px;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    background: #F7C5CC;
+    color: #fff;
+    
+}
+.container{
+ padding: 20px30%;
+ background-position: center; 
+}
+
+nav{
+    align-items:center;
+    justify-content: space-between;
+   
+} 
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 60px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin: 10% 40%;
+    
+}
+.services-list{
+    display: grid;
+    grid-template-collums:repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+    
+    
+}
+.services-list div{
+    background: #080808;
+    padding:40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/*-----Contact Section-----*/
+.contact {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.heading span {
+    color: #ff004f;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: calc(48% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.btn {
+    background-color: #ff004f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Optional: Add hover effect on the button */
+.btn:hover {
+    background-color: #d6004a;
+}
+
+
+/*---FOOTER---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: brown;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.credit {
+    margin-top: 20px;
+    text-align: center;
+}
+
+span {
+    color: #3498db;
+}
